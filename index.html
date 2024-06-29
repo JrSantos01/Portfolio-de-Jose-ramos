@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio de José Ramos</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+html {
+    background: #101418;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-decoration: none;
+    color: #ffff;
+    font-family: "poppins", sans-serif;
+    scroll-behavior: smooth;
+} /*line 7-15*/
+
+.head-wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1300px;
+    margin: auto;
+    padding: 20px;
+
+}
+
+button{
+    background: #1a53ff;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 12px;
+    cursor: pointer;    
+}
+
+/*hero*/
+.hero{
+    text-align: center;
+    height: 60vh;
+    background: #181f26;
+    margin-bottom: 80px;
+    margin-top: -70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 20px;
+}/*line 36-42*/
+
+.hero h1{
+    font-size: 3rem;
+    max-width: 700px;
+
+}
+
+.hero p{
+    margin-top: 10px;
+    opacity: 0.6;
+    font-size: 1.3rem;
+}
+
+.perfil-img{
+    width: 180px;
+    height: 180px;
+    border-radius: 9999px;
+    border: 5px solid #1a53ff;
+}
+
+h2 {
+    font-size: 2rem;
+    margin-bottom: 15px;
+}
+
+/*About*/
+.about-wrapper,
+.socials-wrapper{
+
+    max-width: 1000px;
+    margin: 100px auto;
+    margin-top: 0;
+    padding: 20px;
+}
+
+.about-wrapper{
+    justify-content: center;
+    display: flex;
+}
+
+.about-wrapper .col p {
+    line-height: 32px;
+}
+
+.about-wrapper .col{
+    flex: 1;
+}
+
+.about-wrapper .skills col ul{
+    margin-left: 50px;
+}
+
+.about-wrapper .skills ul {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.about-wrapper .skills ul li {
+    border: 2px;   
+    width: max-content;
+    padding: 3px;
+    border-radius: 12px;
+    margin: 7px;
+    margin-left: 0;
+    font-weight: 500;
+}
+
+.socials-wrapper{
+    line-height: 30px;
+}
+.socials-wrapper p ul {
+            background-color: #fff;
+            padding: 10px;
+            border: 1px solid #ddd;
+            }
+    </style>
+</head>
+
+<body>
+ <!-- head -->
+<header>
+    <div class="header-wrapper">
+        <h3>🧑‍🎓Dev iniciante</h3>
+        <nav>
+            <a href="#contatos">
+                <button>meus contatos</button>
+            </a>
+        </nav>
+    </div>
+</header>
+ <!-- hero -->
+<div class="hero">
+    <div>
+        <img src="perfil.png" alt="Foto de José Ramos">
+    </div>
+    <h1>Olá! Meu nome e José Ramos👋🏼</h1>
+    <p>web disign front-end </p>
+</div>
+ <!-- about -->
+    <div class="about">
+        <div class="about-wrapper">
+            <div class="col">
+            <h2>Minha caminhada no mundo da Tecnologia</h2>
+            <p>
+                estou cursando desenvolvimento de sistema 
+                estou no segundo modulo do curso
+                venho tentando melhorar minhas software skills
+                venho me esforçando mais e mais para aprender
+            </p>
+        </div>
+            <div class="skills col">
+            <h2>Minhas Skills</h2>
+            <ul>
+                <li>Html</li>
+                <li>Css</li>
+                <li>JavaScript</li>
+            </ul>
+            </div>
+        </div>
+    </div>
+ <!-- social -->
+    <div class="socials" id="contatos">
+        <div class="social-warpper">
+            <h2>Meus Contatos</h2>
+               <p>Telefone: +55 81 987868125</p>
+               <p>GitHub: <a href="https://github.com/JrSantos01" target="_blank">JrSantos01</a></p>
+               <p>Instagram: <a href="https://www.instagram.com/santos__jrs/" target="_blank">Santos__Js</a></p>
+               <p>Gmail: raminhosantos170@gmail.com</p>
+        </div>
+    </div>
+</body>
+</html>
